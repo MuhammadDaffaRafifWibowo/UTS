@@ -1,0 +1,200 @@
+:root {
+    --light-pink: #FF69B4; /* Pink terang */
+    --dark-black: #000000; /* Hitam */
+    --white: #FFFFFF; /* Putih */
+}
+
+body,
+html {
+    margin: 0;
+    padding: 0;
+    font-family: "Outfit", sans-serif;
+    background-color: var(--dark-black);
+    background-image: url(./Assets/lisa\ background.webp);
+    background-position: center center;
+    background-size: 30%;
+}
+
+.sidebar {
+    background-color: var(--dark-black);
+    border: 1px solid var(--light-pink);
+    color: var(--light-pink);
+    padding: 20px;
+    height: 100vh;
+    position: sticky;
+    top: 0;
+    overflow-y: auto;
+}
+
+.content {
+    margin-top: 30px;
+}
+
+.sidebar h2 {
+    margin-bottom: 20px;
+    color: var(--light-pink);
+}
+
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.sidebar ul a {
+    color: var(--light-pink);
+    text-decoration: none;
+    margin-bottom: 10px;
+}
+
+.sidebar ul a:hover {
+    color: var(--dark-black);
+}
+
+.menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    color: var(--white);
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.navbar {
+    background-image: url(./Assets/lisa\ background.webp);
+    background-color: var(--light-pink);
+    padding: 10px 20px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 10px;
+}
+
+.navbar h1 {
+    color: var(--white);
+    margin: 0;
+}
+
+.hero-image {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.hero-image img {
+    max-width: 50%;
+    height: auto;
+}
+
+.news-item img {
+    max-width: 100%;
+    height: 80%;
+}
+
+.team-info {
+    background-color: var(--light-pink);
+    color: var(--white);
+    padding: 20px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.team-info h2 {
+    text-align: center;
+}
+
+.team-info p {
+    text-align: justify;
+}
+
+.news-item {
+    background-color: var(--white);
+    border: 1px solid var(--light-pink);
+    padding: 15px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.news-item h2 {
+    font-weight: bold;
+    color: var(--light-pink);
+}
+
+.news-item p a {
+    text-decoration: none;
+    color: black;
+}
+
+.news-item p {
+    text-align: center;
+}
+
+.news-item p a:hover {
+    color: var(--light-pink);
+}
+
+.footer {
+    background-color: var(--dark-black);
+    color: var(--white);
+    text-align: center;
+    padding: 20px;
+    margin-top: auto;
+}
+
+@media (max-width: 767.5px) {
+    .hero-image img {
+        max-width: 80%;
+    }
+
+    .news-item img {
+        max-width: 100%;
+        height: 200%;
+    }
+
+    .navbar h1 {
+        font-size: 100%;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+
+    .navbar-toggler-icon {
+        filter: invert(1);
+        margin-top: 30%;
+    }
+
+    .sidebar {
+        position: fixed;
+        left: -100%;
+        transition: 0.3s;
+        z-index: 3;
+        width: 100%;
+        height: 30%;
+        margin-top: 10%;
+        text-align: center;
+    }
+
+    .sidebar.active {
+        left: 0;
+    }
+}
+.container-fluid {
+    background-image: url(../Assets/lisa\ background.webp);
+}
+.content{
+    background-image: url(../Assets/lisa\ background.webp);
+}
+.hero-image{
+    background-image: url(../Assets/lisa\ background.webp);
+}
